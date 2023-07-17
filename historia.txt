@@ -1,0 +1,70 @@
+iniciando las practicas de las clases anteriores
+
+creamos un nuevo repositorio para empezar a trabajar
+
+la idea es llevar bien el control de los cambios
+--------------------------------------------------
+los cambios que le agamos al archivo van a ser apuntes de los comandos que vayamos aprendiendo
+--------------------------------------------------
+
+Primeros comandos
+
+$git show historia.txt (Te muesta detalladamente los cambios que haz hecho)
+-------------------------------------------------------
+$ git diff b6799a79d6d4f0b5bdf4901677aa96d2de1c1acd b98331f19857b43db1288f5bad19e2a1fb67c980
+
+git diff sirve para comparar las versiones de los commit que hayas hecho
+-------------------------------------------------------
+
+git log --stat (Te muesta los una lista mas detalladadelos cambios que se hicieron)
+-------------------------------------------------------
+
+git checkout b98331f19857b43db1288f5bad19e2a1fb67c980 historia.txt
+
+Con este comando podemos volver a la version del commit que queramos
+
+IMPORTANTE recordar que en un commit pueden haber varios archivos guardados
+por eso hay que poner el codigo del commit y que archivo de ese commit quieres
+volver
+--------------------------------------------------
+git checkout master historia.txt
+
+con este comando podemos volver a la version actual en la que estabamos
+
+si hacemos commit estando en el checkout anterior con el codigo ese pasaria actualser la ultima version
+por eso si quieres regresar a tuultma version para no perder los cambios 
+se puede usar este comando 
+-------------------------------------------------
+
+git reset 6aff014778cf8f52511888ba77ddcb7de261287e --hard
+
+git reset 6aff014778cf8f52511888ba77ddcb7de261287e --soft
+
+(asi se ejecutan los comandos reset)
+
+con git reset se borra todo y se vuelve ala version que estamos indicando 
+
+con git soft si se puede volver a la version master
+------------------------------------------------------
+Git add y commit guarda la informacion en el repositorio local
+para mandar esa informacion respositorio remoto que es donde 
+se comparte la informacion a las demas personas se usa el (Git pull)
+
+--------------------------------------------------------------------
+IMPORTANTE
+--------------------------------------------------------------------
+con el comando (Git BRANCH) creamos ramas en el repositorio que es esto???
+
+primero se crea la rama en este caso fue git branch cabecera y con el comando git checkout cabecera nos movemos a esa rama
+entoces estando aqui los cambios que hagamos al archivo se empezaran a guardar en la nueva rama 
+y no en el master 
+=======
+-----------------------------------------------------
+
+con el comando git branch tambien nos muestra el nombre de las ramas
+que tenemos y en donde estamos
+----------------------------------------------------------
+GIT MERGE PARA FUCIONAR RAMAS 
+
+para fucionar las dos ramas se usa (git merge y el nombre de la rama que se va a fucionar)
+recordar que hay que ahacer esto desde la rama master
