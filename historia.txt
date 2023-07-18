@@ -98,3 +98,8 @@ antes de mandar tu informacion a repositorio remoto debes hacer
 git pull origin mein --allow-unrelated-histories
 (este comando no es comun es un caso de que no te deje enviar tu repositorio )
 ----------------------------------
+como crear un alias o renombrar un comando para que sea masfacil ejecutarlo en caso de que sea muy largo o complicado de escribirlos
+
+( alias arbolito="git log --all --graph --decorate --oneline")
+se escribre alias que vendria siendo un parametro despues el nombre
+quelequeremosponer al comando y igual y entre comillas el comando 
