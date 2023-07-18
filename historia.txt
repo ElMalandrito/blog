@@ -16,7 +16,7 @@ $ git diff b6799a79d6d4f0b5bdf4901677aa96d2de1c1acd b98331f19857b43db1288f5bad19
 git diff sirve para comparar las versiones de los commit que hayas hecho
 -------------------------------------------------------
 
-git log --stat (Te muesta los una lista mas detalladadelos cambios que se hicieron)
+git log --stat (Te muesta una lista mas detalladadelos cambios que se hicieron)
 -------------------------------------------------------
 
 git checkout b98331f19857b43db1288f5bad19e2a1fb67c980 historia.txt
@@ -31,8 +31,8 @@ git checkout master historia.txt
 
 con este comando podemos volver a la version actual en la que estabamos
 
-si hacemos commit estando en el checkout anterior con el codigo ese pasaria actualser la ultima version
-por eso si quieres regresar a tuultma version para no perder los cambios 
+si hacemos commit estando en el checkout anterior con el codigo ese pasaria a ser la ultima version
+por eso si quieres regresar a tu ultma version para no perder los cambios 
 se puede usar este comando 
 -------------------------------------------------
 
@@ -42,7 +42,7 @@ git reset 6aff014778cf8f52511888ba77ddcb7de261287e --soft
 
 (asi se ejecutan los comandos reset)
 
-con git reset se borra todo y se vuelve ala version que estamos indicando 
+con git reset --hard se borra todo y se vuelve a la version que estamos indicando 
 
 con git soft si se puede volver a la version master
 ------------------------------------------------------
@@ -67,7 +67,7 @@ que tenemos y en donde estamos
 GIT MERGE PARA FUCIONAR RAMAS 
 
 para fucionar las dos ramas se usa (git merge y el nombre de la rama que se va a fucionar)
-recordar que hay que ahacer esto desde la rama master
+recordar que hay que a hacer esto desde la rama master
 ----------------------------------------------------------
 Los cuidados que hay que tener con el merge es tener en cuenta que cambios se hacen para no sobre escribirlos 
 -----------------------------------------------------------
@@ -79,3 +79,4 @@ por defecto la rama principal de los proyecto ya no es master sino mein eso lo i
 git pull origin main (con este comando traemos los cambios hechos en github a nuestro repositorio remoto)
 
 git push origin main (y con este comando mandamos nuestro archivo al github)
+-----------------------------------------------------------------------
