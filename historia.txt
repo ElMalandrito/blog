@@ -70,3 +70,8 @@ para fucionar las dos ramas se usa (git merge y el nombre de la rama que se va a
 recordar que hay que ahacer esto desde la rama master
 ----------------------------------------------------------
 Los cuidados que hay que tener con el merge es tener en cuenta que cambios se hacen para no sobre escribirlos 
+-----------------------------------------------------------
+
+IMPORTANTE
+
+por defecto la rama principal de los proyecto ya no es master sino mein eso lo indican en las actualizaciones de git
