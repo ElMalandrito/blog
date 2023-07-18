@@ -58,8 +58,8 @@ con el comando (Git BRANCH) creamos ramas en el repositorio que es esto???
 primero se crea la rama en este caso fue git branch cabecera y con el comando git checkout cabecera nos movemos a esa rama
 entoces estando aqui los cambios que hagamos al archivo se empezaran a guardar en la nueva rama 
 y no en el master 
-=======
------------------------------------------------------
+
+------------------------------------------------------
 
 con el comando git branch tambien nos muestra el nombre de las ramas
 que tenemos y en donde estamos
@@ -68,3 +68,5 @@ GIT MERGE PARA FUCIONAR RAMAS
 
 para fucionar las dos ramas se usa (git merge y el nombre de la rama que se va a fucionar)
 recordar que hay que ahacer esto desde la rama master
+----------------------------------------------------------
+Los cuidados que hay que tener con el merge es tener en cuenta que cambios se hacen para no sobre escribirlos 
