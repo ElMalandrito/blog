@@ -59,6 +59,11 @@ primero se crea la rama en este caso fue git branch cabecera y con el comando gi
 entoces estando aqui los cambios que hagamos al archivo se empezaran a guardar en la nueva rama 
 y no en el master 
 
+PARA INDICAR QUE RAMA VA A SER LA PRINCIPAL SE USA 
+git branch -m main (este comando lo usamos para pasar de la rama master a la mein)
+
+git push origin mein (para actualizar tambien el cambio en repositorio remoto)
+
 ------------------------------------------------------
 
 con el comando git branch tambien nos muestra el nombre de las ramas
@@ -80,3 +85,16 @@ git pull origin main (con este comando traemos los cambios hechos en github a nu
 
 git push origin main (y con este comando mandamos nuestro archivo al github)
 -----------------------------------------------------------------------
+ENLAZANDO github
+(git remote add origin (direccion https de github))
+
+asi se enlaza git con github
+para verificar que esta hecho el cambio se usa el comando 
+(git remote y git remote -v para ver los enlaces)
+-----------------------------------------------------------------
+antes de mandar tu informacion a repositorio remoto debes hacer
+(git pull origin mein) para verificar que no hayan cambios o para ver que cambios hay en el repositorio remoto antes de enviar los tuyos 
+
+git pull origin mein --allow-unrelated-histories
+(este comando no es comun es un caso de que no te deje enviar tu repositorio )
+----------------------------------
