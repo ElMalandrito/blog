@@ -103,3 +103,17 @@ como crear un alias o renombrar un comando para que sea masfacil ejecutarlo en c
 ( alias arbolito="git log --all --graph --decorate --oneline")
 se escribre alias que vendria siendo un parametro despues el nombre
 quelequeremosponer al comando y igual y entre comillas el comando 
+----------------------------------------------
+CREANDO TAGS
+
+son etiquetas que puedes poner a versiones de tus commits que consideres que tienen informacion importante o por ejemplo que en ese commit este todo ok con un tag puedes indicar que esa version podria ser la version 1.0 de tu proyecto
+
+------COMANDOS PARA CREAR Y VISUALIZAR LOS TAGS----
+ 
+ git tag -a v0.1 -m "Resultado de las primeras clases del curso" f99b4d9
+
+(asi se crea un tag ese seria el comando) el ultimo codigo es el codigo del commit esta abreviado porque lo buscamos con el log que ahorase llamaarbolito y te da un resumen de tus commits masdetallados  y abrevia el codigo
+
+con el comando (git tag) puedes ver los tags que ya tienes
+
+con el comando ( git show-ref --tags) te muestra mas detallado los tags que tienes y elcodigo completo que hace referencia al commit que se uso para crear el tag
