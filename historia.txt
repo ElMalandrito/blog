@@ -75,3 +75,7 @@ Los cuidados que hay que tener con el merge es tener en cuenta que cambios se ha
 IMPORTANTE
 
 por defecto la rama principal de los proyecto ya no es master sino mein eso lo indican en las actualizaciones de git
+-------------------------------------------------------------
+git pull origin main (con este comando traemos los cambios hechos en github a nuestro repositorio remoto)
+
+git push origin main (y con este comando mandamos nuestro archivo al github)
