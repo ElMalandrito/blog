@@ -117,3 +117,10 @@ son etiquetas que puedes poner a versiones de tus commits que consideres que tie
 con el comando (git tag) puedes ver los tags que ya tienes
 
 con el comando ( git show-ref --tags) te muestra mas detallado los tags que tienes y elcodigo completo que hace referencia al commit que se uso para crear el tag
+
+ git push origin --tags asi enviamos el tag al repositorio
+
+para borrar una etiqueta (git tag -d "nombre del tag")
+asi borramos el tag del repositorio
+
+para que se borre en github (git push origin :refs/tags/""nombre del tag)
