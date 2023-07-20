@@ -102,7 +102,7 @@ como crear un alias o renombrar un comando para que sea masfacil ejecutarlo en c
 
 ( alias arbolito="git log --all --graph --decorate --oneline")
 se escribre alias que vendria siendo un parametro despues el nombre
-quelequeremosponer al comando y igual y entre comillas el comando 
+quelequeremosponer al comando y igual y entre comillas el comando
 ----------------------------------------------
 CREANDO TAGS
 
@@ -124,3 +124,7 @@ para borrar una etiqueta (git tag -d "nombre del tag")
 asi borramos el tag del repositorio
 
 para que se borre en github (git push origin :refs/tags/""nombre del tag)
+----------------------------------------------------------------------
+IMPORTANTE 
+
+el comando (gitk) te muetra una version del git log mucho mejor visualmente se pueden abre una especie de programa parecido a la opcion inspecionar que se usa en google
