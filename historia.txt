@@ -127,4 +127,10 @@ para que se borre en github (git push origin :refs/tags/""nombre del tag)
 ----------------------------------------------------------------------
 IMPORTANTE 
 
-el comando (gitk) te muetra una version del git log mucho mejor visualmente se pueden abre una especie de programa parecido a la opcion inspecionar que se usa en google
+el comando (gitk) te muestra una version del git log mucho mejor visualmente se abre una especie de programa parecido a la opcion inspecionar que se usa en google
+----------------------------------------------------------------------
+NOTA
+
+para traer o enviar una rama al repositorio el comando seria
+
+git pull o push origin  y el nombre de la rama 
