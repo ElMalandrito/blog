@@ -134,3 +134,7 @@ NOTA
 para traer o enviar una rama al repositorio el comando seria
 
 git pull o push origin  y el nombre de la rama 
+-----------------------------------------------------------------
+practica de Rebase
+
+Master 1
