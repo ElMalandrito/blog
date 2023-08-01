@@ -159,3 +159,47 @@ Es posible que quieras listar los "stash" disponibles para elegir cuál de ellos
 Si deseas eliminar los cambios de un "stash" específico de la pila temporal, puedes utilizar git stash drop <stash@{n}>, donde <stash@{n}>es la referencia al "stash" que deseas eliminar.
 
 En resumen, el comando "git stash" es una herramienta útil para guardar temporalmente los cambios en una pila y poder trabajar en otras tareas sin necesidad de hacer un commit provisional. Luego, puedes volver a aplicar esos cambios cuando sea conveniente
+-------------------------------------------------------------------------
+El comando "git clean" se utiliza para eliminar de manera definitiva los archivos no rastreados en el directorio de trabajo. Los archivos no rastreados son aquellos que aún no han sido agregados al índice de Git mediante "git add" y que, por lo tanto, no están bajo seguimiento.
+
+Esencialmente, "git clean" es útil para limpiar el directorio de trabajo de archivos generados automáticamente, archivos de compilación, o cualquier otro archivo que no esté siendo gestionado por Git y que no desee conservar en su repositorio.
+
+La sintaxis básica del comando "git clean" es la siguiente:
+
+CSS
+
+Copiar código
+git clean [-d] [-f] [-i] [-x] [--dry-run] [--force] [--interactive] [--exclude=<patrón>]
+Dónde:
+
+-d: Elimina directorios no rastreados junto con los archivos.
+-fo --force: Fuerza la limpieza sin solicitar confirmación.
+-io --interactive: Proporciona una interfaz interactiva para seleccionar los archivos que deseas eliminar.
+-x: También elimina los archivos especificados en el archivo .gitignore.
+--dry-run: Muestra una lista de archivos que ninguno fueron eliminados, pero no realiza una acción real.
+--exclude=<patrón>: Permite especificar patrones de archivos a eliminar de la limpieza.
+Es importante tener precaución al usar "git clean", ya que los archivos eliminados no se pueden recuperar fácilmente. Antes de usar la opción -fo --force, te sugeriría utilizar --dry-runpara ver qué archivos eliminados serían sin eliminarlos realmente. Esto te permitirá revisar la lista antes de tomar una decisión final.
+
+Algunos ejemplos de usos comunes son:
+
+Eliminar archivos no rastreados de manera forzada:
+
+
+Copiar código
+git clean -f
+Eliminar directorios no rastreados y archivos que están ignorados en el .gitignore:
+
+intento
+
+Copiar código
+git clean -df
+Ver qué archivos se eliminarían sin eliminarlos realmente (uso de --dry-run):
+
+
+Copiar código
+git clean -n
+Recuerda que, aunque "git clean" es útil para limpiar tu directorio de trabajo, asegúrate de que comprendes qué archivos serán eliminados antes de ejecutar el comando. Si tiene dudas o no está seguro acerca de los archivos que serán eliminados, es mejor consultar la documentación o buscar ayuda para evitar la pérdida de datos importantes.
+
+
+
+
