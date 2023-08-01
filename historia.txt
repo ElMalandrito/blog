@@ -142,12 +142,20 @@ es como si ese merge no se hubiera hecho solo se debe hacer en tu repositorio lo
 ----------------------------------------------------------------------
 Comando git stash
 
-sirve para crear como commits temporales es en caso de que quieras moverte entre ramas pero no quieras hacer un commit ya que posiblemente los cambios no sean significativos para guardarlosen un commit aun o que aun no tengas listo lo que estes haciendo y no quieras crear un commit solo para poder moverte a otra rama
+El comando "git stash" se utiliza para guardar temporalmente los cambios que tienes en tu directorio de trabajo sin necesidad de hacer un commit. Es útil cuando estás trabajando en una rama y necesitas cambiar a otra rama para resolver un problema o trabajar en una tarea urgente, pero no deseas hacer un commit con cambios inacabados o no probados.
 
-cuando ya tengas los cambios listos con los siguientes comandos puedes guardar los cambios que hayas hecho
+Cuando ejecuta "git stash", Git tomará todos los cambios que aún no han sido confirmados y los guardará en una pila de almacenamiento temporal, conocida como "stash". Esta pila te permite almacenar varios conjuntos de cambios en diferentes "stash" si lo necesitas.
 
-con git stash pop vuelves al estado original recuerda que git stash es como una rama temporal al usar git stash pop sales de esa rama 
+El flujo básico del uso del comando "git stash" es el siguiente:
 
-Con este comando guardas los cambios que tengas en git stash en una rama 
+Ejecutas git stash: Guarda los cambios en la pila temporal, dejando tu directorio de trabajo limpio para cambios futuros.
 
-git stash branch nombre de la rama
+Haces cambios adicionales o te cambias a otra rama para trabajar en otra cosa.
+
+Cuando estés listo para continuar trabajando en los cambios que guardaste, puedes aplicar los cambios de la pila temporal nuevamente al directorio de trabajo mediante el comando git stash apply. Esto restaurará los cambios que guardó anteriormente.
+
+Es posible que quieras listar los "stash" disponibles para elegir cuál de ellos aplicar. Puedes hacerlo con git stash list.
+
+Si deseas eliminar los cambios de un "stash" específico de la pila temporal, puedes utilizar git stash drop <stash@{n}>, donde <stash@{n}>es la referencia al "stash" que deseas eliminar.
+
+En resumen, el comando "git stash" es una herramienta útil para guardar temporalmente los cambios en una pila y poder trabajar en otras tareas sin necesidad de hacer un commit provisional. Luego, puedes volver a aplicar esos cambios cuando sea conveniente
