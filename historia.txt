@@ -135,11 +135,19 @@ para traer o enviar una rama al repositorio el comando seria
 
 git pull o push origin  y el nombre de la rama 
 -----------------------------------------------------------------
-practica de Rebase
+REBASE 
 
-Master 1
+es una forma de hacer como un merge silencioso por asidecirlo
+es como si ese merge no se hubiera hecho solo se debe hacer en tu repositorio local
+----------------------------------------------------------------------
+Comando git stash
 
-Master 2
+sirve para crear como commits temporales es en caso de que quieras moverte entre ramas pero no quieras hacer un commit ya que posiblemente los cambios no sean significativos para guardarlosen un commit aun o que aun no tengas listo lo que estes haciendo y no quieras crear un commit solo para poder moverte a otra rama
 
-Master 3
-AGREGANDO CAMBIOS PARA HACER EL REBASE
+cuando ya tengas los cambios listos con los siguientes comandos puedes guardar los cambios que hayas hecho
+
+con git stash pop vuelves al estado original recuerda que git stash es como una rama temporal al usar git stash pop sales de esa rama 
+
+Con este comando guardas los cambios que tengas en git stash en una rama 
+
+git stash branch nombre de la rama
